@@ -1,15 +1,16 @@
 class Calculator {
-    constructor[
-
-    ]
+    constructor(){
+        this.clear()
+        this.calc()
+    }
 
     clear() {
-        display.value = "";
+        document.querySelector('.display').value = "";
     }
     calc() {
-        display.value = eval(display.value);
+        document.querySelector('.display').value = eval( document.querySelector('.display').value);
     }
     press(x) {
-        display.value += x;
+        document.querySelector('.display').value += x;
     }
 }
