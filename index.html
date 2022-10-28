@@ -10,7 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
-</head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"></head>
 
 <body>
     <div class="wrapper">
@@ -26,40 +29,41 @@
             </div>
         </div>
 
-        <div class="input-form">
-            <input class="display" type="text">
+        <div class="calc-form">
+                <div class="history"></div>
+                <div class="result"></div>
         </div>
 
         <div class="calc-wrapper">
             <div class="row">
-                <button onclick="clear()">C</button>
-                <button onclick="calc()">%</button>
-                <button onclick="calc()">±</button>
-                <button onclick="press('/')">÷</button>
+                <div onclick="clear()">C</div>
+                <div onclick="calc()">%</div>
+                <div onclick="calc()">±</div>
+                <div onclick="press('/')">÷</div>
             </div>
 
             <div class="row">
-                <button onclick="press('7')">7</button>
-                <button onclick="press('8')">8</button>
-                <button onclick="press('9')">9</button>
-                <button onclick="press('*')">X</button>
+                <div onclick="press('7')">7</div>
+                <div onclick="press('8')">8</div>
+                <div onclick="press('9')">9</div>
+                <div onclick="press('*')">X</div>
             </div>
             <div class="row">
-                <button onclick="press('4')">4</button>
-                <button onclick="press('5')">5</button>
-                <button onclick="press('6')">6</button>
-                <button onclick="press('-')">-</button>
+                <div onclick="press('4')">4</div>
+                <div onclick="press('5')">5</div>
+                <div onclick="press('6')">6</div>
+                <div onclick="press('-')">-</div>
             </div>
             <div class="row">
-                <button onclick="press('1')">1</button>
-                <button onclick="press('2')">2</button>
-                <button onclick="press('3')">3</button>
-                <button onclick="press('+')">+</button>
+                <div onclick="press('1')">1</div>
+                <div onclick="press('2')">2</div>
+                <div onclick="press('3')">3</div>
+                <div onclick="press('+')">+</div>
             </div>
             <div class="row">
-                <button onclick="press('0')">0</button>
-                <button onclick="press('.')">.</button>
-                <button onclick="calc()">=</button>
+                <div onclick="press('0')">0</div>
+                <div onclick="press('.')">.</div>
+                <div onclick="calc()">=</div>
             </div>
         </div>
     </div>

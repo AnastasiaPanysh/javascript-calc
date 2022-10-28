@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "DM Sans";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
 }
@@ -18,4 +19,48 @@ body {
   background: linear-gradient(180deg, #DEDEDE 0%, #CACACA 50.52%, rgba(210, 210, 210, 0.87) 100%);
   border-radius: 14.7879px;
   margin-top: 30px;
+}
+.wrapper .theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 20px;
+}
+.wrapper .theme p {
+  font-family: "DM Sans";
+}
+.wrapper .calc-form {
+  width: 300px;
+  height: 200px;
+}
+.wrapper .calc-form .history {
+  font-family: "Poppins";
+  text-align: right;
+  color: #0D0D0D;
+}
+.wrapper .calc-form .result {
+  font-family: "Poppins";
+  font-weight: 500;
+  text-align: right;
+  color: #0D0D0D;
+}
+.wrapper .calc-wrapper {
+  width: 200px;
+  margin: auto;
+  outline: none;
+  font-family: "Poppins";
+  font-size: 22px;
+  padding-bottom: 100px;
+  color: #0D0D0D;
+}
+.wrapper .calc-wrapper .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
