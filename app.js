@@ -1,25 +1,18 @@
 let res = document.querySelector('.result');
-let buttons = document.querySelectorAll('.data-operation');
-let clear = document.querySelector('.data-clear');
-let equal = document.querySelector('.data-equals');
+const calc = document.querySelector('.calc-wrapper');
 
-buttons.forEach(function (button) {
-  button.addEventListener('click', function (calc) {
-    let value = calc.target.dataset.num;
-    res.value += value;
-  })
-});
 
-equal.addEventListener('click', function (calc) {
-  if (res.value === '') {
-    res.value = 'Please Enter a Value';
-  } else {
-    let answer = eval(res.value);
-    res.value = answer;
+  calc.addEventListener('click', function (event) {
+  let value = event.target.innerText;
+  switch (value) {
+    case '=':
+      res.innerText = eval(res.innerText)
+      break;
+    case 'C':
+      res.innerText = ''
+      break;
+    default:
+      res.innerText += value;
   }
-})
-
-clear.addEventListener('click', function (calc) {
-  res.value = '';
 })
 
