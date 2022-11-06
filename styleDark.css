@@ -49,9 +49,11 @@ body {
 }
 .wrapper .calc-form .history {
   font: 400 20px "Poppins";
+  color: #CACACA;
 }
 .wrapper .calc-form .result {
   font: 400 40px "Poppins";
+  color: #CACACA;
 }
 .wrapper .calc-wrapper {
   width: 250px;

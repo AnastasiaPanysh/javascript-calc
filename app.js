@@ -27,10 +27,6 @@ light.addEventListener('click', () => {
   link.setAttribute("href", current)
 })
 
-
-
-
-
 const res = document.querySelector('.result');
 const history = document.querySelector('.history');
 const calc = document.querySelector('.calc-wrapper');
@@ -60,10 +56,10 @@ calc.addEventListener('click', function (event) {
       break;
     case '%':
       if (res.textContent) {
-        resultStrintMath = `${+res.textContent * -1}`
+        resultStrintMath = `${res.textContent/100}`
         res.innerHTML = resultStrintMath
       } else {
-        history.innerHTML = `${+history.textContent * -1}`
+        history.innerHTML = `${res.textContent/100}`
       }
       break;
 
