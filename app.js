@@ -1,4 +1,3 @@
-
 const rectangle = document.querySelectorAll('.rectangle')
 const paragraf = document.querySelectorAll('.theme p')
 for (let i = 0; i < paragraf.length; i++) {
@@ -27,6 +26,7 @@ light.addEventListener('click', () => {
   link.setAttribute("href", current)
 })
 
+
 const res = document.querySelector('.result');
 const history = document.querySelector('.history');
 const calc = document.querySelector('.calc-wrapper');
@@ -37,10 +37,15 @@ calc.addEventListener('click', function (event) {
 
   switch (value) {
     case '=':
-      history.innerHTML = resultStrintMath
-      res.innerHTML = eval(resultStrintMath)
+      history.innerHTML = resultStrintMath;
+      if (+res%1===0) {
+        res.innerHTML = eval(resultStrintMath)
+      } else {
+        res.innerHTML = eval(resultStrintMath).toFixed(2)
+      }
       resultStrintMath = ''
       break;
+
     case 'C':
       res.innerHTML = ''
       history.innerHTML = ''
@@ -59,7 +64,7 @@ calc.addEventListener('click', function (event) {
         resultStrintMath = `${res.textContent/100}`
         res.innerHTML = resultStrintMath
       } else {
-        history.innerHTML = `${res.textContent/100}`
+        history.innerHTML = `${history.textContent/100}`
       }
       break;
 
