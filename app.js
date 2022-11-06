@@ -1,3 +1,4 @@
+
 const rectangle = document.querySelectorAll('.rectangle')
 const paragraf = document.querySelectorAll('.theme p')
 for (let i = 0; i < paragraf.length; i++) {
@@ -8,10 +9,6 @@ for (let i = 0; i < paragraf.length; i++) {
     rectangle[i].hidden = true;
   })
 };
-
-
-
-
 
 const res = document.querySelector('.result');
 const history = document.querySelector('.history');
