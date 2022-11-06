@@ -10,6 +10,27 @@ for (let i = 0; i < paragraf.length; i++) {
   })
 };
 
+const dark = document.querySelector('.dark')
+const light = document.querySelector('.light')
+const link = document.querySelector('.theme-link');
+dark.addEventListener('click', () => {
+  let darkTheme = "styleDark.css";
+  let current = link.getAttribute("href");
+  current = darkTheme;
+  link.setAttribute("href", current)
+})
+
+light.addEventListener('click', () => {
+  let lightTheme = "style.css";
+  let current = link.getAttribute("href");
+  current = lightTheme;
+  link.setAttribute("href", current)
+})
+
+
+
+
+
 const res = document.querySelector('.result');
 const history = document.querySelector('.history');
 const calc = document.querySelector('.calc-wrapper');

@@ -15,8 +15,8 @@ body {
   width: 300px;
   height: 600px;
   margin: auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(#DEDEDE), color-stop(50.52%, #CACACA), to(rgba(210, 210, 210, 0.87)));
-  background: linear-gradient(180deg, #DEDEDE 0%, #CACACA 50.52%, rgba(210, 210, 210, 0.87) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#2E2E2E), color-stop(50.52%, #2C2C2C), to(rgba(36, 36, 36, 0.87)));
+  background: linear-gradient(180deg, #2E2E2E 0%, #2C2C2C 50.52%, rgba(36, 36, 36, 0.87) 100%);
   border-radius: 14.7879px;
   margin: 30px auto;
 }
@@ -35,6 +35,7 @@ body {
 }
 .wrapper .theme p {
   font-family: "DM Sans";
+  color: #CACACA;
 }
 .wrapper .theme .rectangle {
   background-image: url(./assets/Rectangle\ 21.svg);
@@ -73,7 +74,7 @@ body {
   width: max-content;
   width: 60px;
   height: 60px;
-  background: rgb(169, 168, 168);
+  background: rgb(95, 95, 95);
   border-radius: 50%;
   text-align: center;
   line-height: 60px;
@@ -84,6 +85,7 @@ body {
           user-select: none;
   cursor: pointer;
   margin: 2px;
+  color: #CACACA;
 }
 .wrapper .calc-wrapper .row :last-child {
   color: #FF5454;
