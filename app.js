@@ -38,7 +38,7 @@ calc.addEventListener('click', function (event) {
   switch (value) {
     case '=':
       history.innerHTML = resultStrintMath;
-      if (+res%1===0) {
+      if (+eval(resultStrintMath) % 1 === 0) {
         res.innerHTML = eval(resultStrintMath)
       } else {
         res.innerHTML = eval(resultStrintMath).toFixed(2)
