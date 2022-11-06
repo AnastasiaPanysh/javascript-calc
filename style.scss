@@ -12,7 +12,7 @@ $color-font: #0D0D0D;
 
 body {
     background-color: $color-body;
-    }
+}
 
 .wrapper {
     width: 300px;
@@ -27,6 +27,7 @@ body {
         justify-content: space-between;
         padding: 40px 30px;
         user-select: none;
+        height: 5%;
 
 
         p {
@@ -61,7 +62,7 @@ body {
         margin: auto;
         font-family: 'Poppins';
         font-size: 35px;
-        color:color-font;
+        color: color-font;
 
 
 

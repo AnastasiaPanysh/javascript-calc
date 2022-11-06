@@ -32,6 +32,7 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  height: 5%;
 }
 .wrapper .theme p {
   font-family: "DM Sans";
